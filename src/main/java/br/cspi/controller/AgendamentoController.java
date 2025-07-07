@@ -36,7 +36,6 @@ public class AgendamentoController {
                                 HttpSession session,
                                 Model model) {
         Integer usuarioId = (Integer) session.getAttribute("usuarioId");
-        if (usuarioId == null) return "redirect:/login";
 
         if (dataSelecionada == null) {
             dataSelecionada = LocalDate.now();
@@ -54,7 +53,6 @@ public class AgendamentoController {
     @GetMapping("/AdicionarAgendamento")
     public String novoAgendamento(HttpSession session, Model model) {
         Integer usuarioId = (Integer) session.getAttribute("usuarioId");
-        if (usuarioId == null) return "redirect:/login";
 
         model.addAttribute("pets", new PetsService().listarPets(usuarioId));
         model.addAttribute("servicos", new ServicoService().listarServicos(usuarioId));
@@ -73,9 +71,6 @@ public class AgendamentoController {
     ) {
         Integer usuarioId = (Integer) session.getAttribute("usuarioId");
 
-        if (usuarioId == null) {
-            return "redirect:/login";
-        }
 
         try {
             LocalDate data = LocalDate.parse(dataStr); // "2025-07-01"

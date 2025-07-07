@@ -20,7 +20,7 @@ public class ServicoController {
     @GetMapping
     public String listarServicos(HttpSession session, Model model) {
         Integer id = (Integer) session.getAttribute("usuarioId");
-        System.out.println(id);
+
 
         List<Servico> servicos = new ServicoService().listarServicos(id);
 
@@ -31,7 +31,7 @@ public class ServicoController {
     @GetMapping("/Cadastro")
     public String pageCadastro(HttpSession session) {
         Integer id = (Integer) session.getAttribute("usuarioId");
-        System.out.println(id);
+
 
         return "pages/servicos";
 
@@ -45,7 +45,7 @@ public class ServicoController {
                                    @RequestParam("tempo") String tempo)
     {
         Integer id = (Integer) session.getAttribute("usuarioId");
-        System.out.println(id);
+
 
 
 

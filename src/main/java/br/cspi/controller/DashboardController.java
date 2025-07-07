@@ -22,12 +22,10 @@ public class DashboardController {
     public String dashboard(HttpSession session) {
 
         Integer id = (Integer) session.getAttribute("usuarioId");
-        System.out.println(id);
-        if (id == null) {
-            return "redirect:/login";
-        }else {
-            return "pages/dashboard";
-        }
+
+
+        return "pages/dashboard";
+
     }
 
 

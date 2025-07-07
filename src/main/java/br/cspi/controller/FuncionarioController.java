@@ -17,13 +17,11 @@ public class FuncionarioController {
     @GetMapping
     public String listarFuncionarios(HttpSession session, Model model) {
         Integer id = (Integer) session.getAttribute("usuarioId");
-        if (id == null) {
-            return "redirect:/login";
-        } else {
+
             List<Funcionario> funcionarios = new FuncionarioService().listarFuncionarios(id);
             model.addAttribute("funcionarios", funcionarios);
             return "pages/tabelaFuncionarios";
-        }
+
     }
 
     @PostMapping("/Excluir")
