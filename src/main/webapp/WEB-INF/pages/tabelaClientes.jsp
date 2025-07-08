@@ -21,7 +21,7 @@
   <div class="main-content">
     <h1>Clientes</h1>
     <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center">
-      <a href="Clientes?action=CADASTRAR" class="btn btn-primary">Novo Cliente</a>
+      <a href="Cliente/Cadastrar" class="btn btn-primary">Novo Cliente</a>
       <a href="/dashboard" class="btn-primary">Voltar</a>
     </div>
 

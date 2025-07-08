@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="<c:url value="../static/css/geral.css"/>">
 </head>
 <body>
-<div class="cadastro-container">
+<div class="cadastro-container" style="margin-top: 300px">
 
     <div class="titulo">
     <h1>Cadastro de Usuário e Cliente   </h1>

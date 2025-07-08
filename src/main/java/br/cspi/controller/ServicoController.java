@@ -56,7 +56,7 @@ public class ServicoController {
         servico.setTempo(tempo);
 
         if (new ServicoService().cadastrarServico(servico, id)){
-            return "pages/tabelaServicos";
+            return "redirect:/Servico";
         }
         else {
             return "redirect:/Cadastro";

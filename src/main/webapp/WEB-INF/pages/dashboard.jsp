@@ -72,7 +72,7 @@
             <a class="btn" href="/Cliente/Cadastrar" type="submit" >Cadastrar Cliente</a>
             <a class="btn" href="/Cliente" >Mostrar Clientes</a>
             <a class="btn" href="/Pets" type="submit"  >Mostrar Pets</a>
-            <a class="btn" href="/Servico" type="submit"  >Agenda</a>
+            <a class="btn" href="/Servico" type="submit"  >Serviços</a>
             <a class="btn" href="/Funcionario" type="submit"  >Funcionarios</a>
             <a class="btn" href="/Agendamento" type="submit"  >Agenda</a>
         </form>

@@ -13,7 +13,7 @@ public class AutorizadorInterceptor implements HandlerInterceptor {
                              Object handler) throws Exception {
         String url = request.getRequestURI();
 
-        if (url.equals("/") || url.equals("/login")  || url.equals("/Cadastro")) {
+        if (url.equals("/") || url.equals("/home") || url.equals("/login")  || url.equals("/Cadastro")) {
             return true;
         }
 
