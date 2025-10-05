@@ -11,13 +11,14 @@ public class AutorizadorInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response,
                              Object handler) throws Exception {
+
         String url = request.getRequestURI();
 
         if (url.equals("/") || url.equals("/home") || url.equals("/login")  || url.equals("/Cadastro")) {
             return true;
         }
 
-        if (url.startsWith("/static/css/")) {
+        if (url.startsWith("/static/css/") || url.startsWith("/static/img/")) {
             return true;
         }
 

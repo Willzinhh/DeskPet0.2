@@ -15,16 +15,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - Sistema</title>
-  <link rel="stylesheet" type="text/css" href="<c:url value="../static/css/geral.css"/>">
+  <link rel="stylesheet" type="text/css" href="<c:url value="../static/css/login.css"/>">
 </head>
-<body>;
+<body>
+
+<nav class="navbar">
+  <a href="#" class="logo"><img src="../static/img/logo.png" alt="Logo DeskPet"  width="200" ></a>
+  <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+  <ul id="nav-links">
+    <li><a href="#home">Início</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<div class="box">
 <c:if test="${not empty msg}">
   <h3 style=" justify-content: center; align-items: center; color: #ff0000; margin: 20px 0;">${msg}</h3>
 </c:if>
+
 <div class="login-container">
   <div class="login-header">
-    <h1>Bem-vindo de volta</h1>
-    <p>Faça login para acessar sua conta</p>
+    <h1>Bom Te Ver </h1>
+    <h1> De Novo</h1>
+    <div class="login-img">
+    <img src="../static/img/loginDog.png" alt="Pet feliz por te ver"  width="150">
+    </div>
   </div>
 
 
@@ -51,7 +68,7 @@
      <a href="/home">Voltar</a>
   </div>
 </div>
-
+</div>
 </body>
 </html>
 
